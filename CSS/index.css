@@ -1,4 +1,58 @@
+@font-face {
+    font-family: Comfortaa-Regular;
+    src: url('Comfortaa-Regular.ttf');
+}
+
+@font-face {
+    font-family: Comfortaa-Bold;
+    src: url('Comfortaa-Bold.ttf');
+}
+
 .Title {
-    font-size: 50px;
-    color:pink
+    display: flex;
+    justify-content: center;
+    background-color: rgb(31, 31, 255);
+    padding: none;
+}
+
+.Title h1 {
+    font-family: Comfortaa-Regular;
+    font-size: 80px;
+    color:white;
+    margin: 0;
+    -webkit-text-stroke: 4px darkblue;
+}
+
+body {
+    margin: 0;
+}
+
+.menu-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-bottom: 20px;
+}
+
+.menu-row {
+    column-gap: 0;
+}
+
+.menu-item {
+    display: inline-grid;
+}
+
+.menu-item button {
+    background-color: rgb(204, 255, 255);
+    border-color: rgb(174, 238, 238);
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0;
+    font-size: 30px;
+    transition: background-color 0.3s, border-color 0.3s linear 0.3s;
+}
+
+.menu-item button:hover {
+    background-color: rgb(151, 221, 221);
+    border-color: rgb(131, 190, 190);
 }
